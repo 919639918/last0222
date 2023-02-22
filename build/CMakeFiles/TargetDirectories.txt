@@ -1,0 +1,8 @@
+C:/Users/Administrator/Desktop/Qtdemo/2302/build/CMakeFiles/2302.dir
+C:/Users/Administrator/Desktop/Qtdemo/2302/build/CMakeFiles/edit_cache.dir
+C:/Users/Administrator/Desktop/Qtdemo/2302/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Administrator/Desktop/Qtdemo/2302/build/CMakeFiles/list_install_components.dir
+C:/Users/Administrator/Desktop/Qtdemo/2302/build/CMakeFiles/install.dir
+C:/Users/Administrator/Desktop/Qtdemo/2302/build/CMakeFiles/install/local.dir
+C:/Users/Administrator/Desktop/Qtdemo/2302/build/CMakeFiles/install/strip.dir
+C:/Users/Administrator/Desktop/Qtdemo/2302/build/CMakeFiles/2302_autogen.dir
