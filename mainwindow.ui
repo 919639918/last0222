@@ -11,16 +11,16 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>调试助手1.0</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>20</y>
-      <width>176</width>
-      <height>351</height>
+      <y>10</y>
+      <width>171</width>
+      <height>371</height>
      </rect>
     </property>
     <property name="title">
@@ -97,21 +97,21 @@
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>20</y>
+      <y>10</y>
       <width>551</width>
-      <height>231</height>
+      <height>241</height>
      </rect>
     </property>
     <property name="title">
      <string>数据接收区</string>
     </property>
-    <widget class="QTextEdit" name="textEdit_rec">
+    <widget class="QPlainTextEdit" name="plainTextEdit">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>20</y>
        <width>531</width>
-       <height>191</height>
+       <height>201</height>
       </rect>
      </property>
     </widget>
@@ -120,7 +120,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>400</y>
+      <y>410</y>
       <width>771</width>
       <height>141</height>
      </rect>
@@ -149,6 +149,68 @@
      </property>
      <property name="text">
       <string>发送</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_Clear">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>90</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>清空</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="sendHex">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>90</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>十六进制</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="Asci">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>90</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ASCI</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="sendTimer">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>90</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>定时发送</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBox">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>90</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
      </property>
     </widget>
    </widget>

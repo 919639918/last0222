@@ -339,6 +339,6 @@ C:/Users/Administrator/Desktop/Qtdemo/2302/mainwindow.h
  mdp:C:/Qt6/6.4.1/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:C:/Qt6/6.4.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:C:/Qt6/6.4.1/mingw_64/include/QtWidgets/qwidget.h
-C:/Users/Administrator/Desktop/Qtdemo/2302/main.cpp
 C:/Users/Administrator/Desktop/Qtdemo/2302/mainwindow.cpp
  uic:./ui_mainwindow.h
+C:/Users/Administrator/Desktop/Qtdemo/2302/main.cpp

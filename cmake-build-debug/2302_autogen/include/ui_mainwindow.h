@@ -11,13 +11,16 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
@@ -43,10 +46,15 @@ public:
     QPushButton *btnOpen;
     QPushButton *btnClose;
     QGroupBox *groupBox_2;
-    QTextEdit *textEdit_rec;
+    QPlainTextEdit *plainTextEdit;
     QGroupBox *groupBox_3;
     QTextEdit *textEdit_Send;
     QPushButton *btnSend;
+    QPushButton *btn_Clear;
+    QCheckBox *sendHex;
+    QCheckBox *Asci;
+    QCheckBox *sendTimer;
+    QSpinBox *spinBox;
     QGroupBox *groupBox_4;
     QGridLayout *gridLayout_2;
     QLabel *label_6;
@@ -69,7 +77,7 @@ public:
         centralwidget->setObjectName("centralwidget");
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName("groupBox");
-        groupBox->setGeometry(QRect(20, 20, 176, 351));
+        groupBox->setGeometry(QRect(20, 10, 171, 371));
         gridLayout = new QGridLayout(groupBox);
         gridLayout->setObjectName("gridLayout");
         label = new QLabel(groupBox);
@@ -134,19 +142,34 @@ public:
 
         groupBox_2 = new QGroupBox(centralwidget);
         groupBox_2->setObjectName("groupBox_2");
-        groupBox_2->setGeometry(QRect(240, 20, 551, 231));
-        textEdit_rec = new QTextEdit(groupBox_2);
-        textEdit_rec->setObjectName("textEdit_rec");
-        textEdit_rec->setGeometry(QRect(10, 20, 531, 191));
+        groupBox_2->setGeometry(QRect(240, 10, 551, 241));
+        plainTextEdit = new QPlainTextEdit(groupBox_2);
+        plainTextEdit->setObjectName("plainTextEdit");
+        plainTextEdit->setGeometry(QRect(10, 20, 531, 201));
         groupBox_3 = new QGroupBox(centralwidget);
         groupBox_3->setObjectName("groupBox_3");
-        groupBox_3->setGeometry(QRect(20, 400, 771, 141));
+        groupBox_3->setGeometry(QRect(20, 410, 771, 141));
         textEdit_Send = new QTextEdit(groupBox_3);
         textEdit_Send->setObjectName("textEdit_Send");
         textEdit_Send->setGeometry(QRect(10, 30, 751, 51));
         btnSend = new QPushButton(groupBox_3);
         btnSend->setObjectName("btnSend");
         btnSend->setGeometry(QRect(10, 90, 75, 24));
+        btn_Clear = new QPushButton(groupBox_3);
+        btn_Clear->setObjectName("btn_Clear");
+        btn_Clear->setGeometry(QRect(100, 90, 75, 24));
+        sendHex = new QCheckBox(groupBox_3);
+        sendHex->setObjectName("sendHex");
+        sendHex->setGeometry(QRect(470, 90, 80, 20));
+        Asci = new QCheckBox(groupBox_3);
+        Asci->setObjectName("Asci");
+        Asci->setGeometry(QRect(400, 90, 80, 20));
+        sendTimer = new QCheckBox(groupBox_3);
+        sendTimer->setObjectName("sendTimer");
+        sendTimer->setGeometry(QRect(210, 90, 80, 20));
+        spinBox = new QSpinBox(groupBox_3);
+        spinBox->setObjectName("spinBox");
+        spinBox->setGeometry(QRect(290, 90, 91, 22));
         groupBox_4 = new QGroupBox(centralwidget);
         groupBox_4->setObjectName("groupBox_4");
         groupBox_4->setGeometry(QRect(240, 270, 551, 111));
@@ -216,7 +239,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "\350\260\203\350\257\225\345\212\251\346\211\2131.0", nullptr));
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "\344\270\262\345\217\243\351\205\215\347\275\256", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "\351\200\211\346\213\251\344\270\262\345\217\243\357\274\232", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "\346\263\242\347\211\271\347\216\207\357\274\232", nullptr));
@@ -228,6 +251,10 @@ public:
         groupBox_2->setTitle(QCoreApplication::translate("MainWindow", "\346\225\260\346\215\256\346\216\245\346\224\266\345\214\272", nullptr));
         groupBox_3->setTitle(QCoreApplication::translate("MainWindow", "\346\225\260\346\215\256\345\217\221\351\200\201\345\214\272", nullptr));
         btnSend->setText(QCoreApplication::translate("MainWindow", "\345\217\221\351\200\201", nullptr));
+        btn_Clear->setText(QCoreApplication::translate("MainWindow", "\346\270\205\347\251\272", nullptr));
+        sendHex->setText(QCoreApplication::translate("MainWindow", "\345\215\201\345\205\255\350\277\233\345\210\266", nullptr));
+        Asci->setText(QCoreApplication::translate("MainWindow", "ASCI", nullptr));
+        sendTimer->setText(QCoreApplication::translate("MainWindow", "\345\256\232\346\227\266\345\217\221\351\200\201", nullptr));
         groupBox_4->setTitle(QCoreApplication::translate("MainWindow", "\346\225\260\346\215\256\350\247\243\346\236\220", nullptr));
         label_6->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         label_9->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
